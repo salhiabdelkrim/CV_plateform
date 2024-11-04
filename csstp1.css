@@ -1,0 +1,109 @@
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+ ------------------------------------- Style de base de la page  ----------------------------------------------
+-------------------------------------------------------------------------------------------------------------- */
+
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+body{
+    background-image: url(PICS/background.jpg);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+header h1{
+    font-family: 'Yatra One';
+    margin-right: 10px;
+
+}
+div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* on précise ici que le contenu accueil et cv doivent prendre 75% de la largeur de la page avec des précision sur la forme  */
+.cv{
+    width: 75%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex; 
+}
+/*  On enlève la décoration des listes HTML par défaut */
+ul{
+    list-style-type: none; 
+}
+li{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+.sousmenu li{
+    color: white;
+}
+.sousmenu-item:first-of-type{
+    background-color: rgb(151, 128, 85);
+}
+/* changement du de couleurs de fond et du style du sous-menu au survol */
+.sousmenu li:hover{
+    background-color:rgba(0, 0, 0, 0.4) ;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;   
+}
+.sousmenu-item:hover{ 
+    background-color:rgba(0, 0, 0, 0.4) ;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sousmenu-item a:visited{
+    background-color:rgba(0, 0, 0, 0.4) ;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
+/* usage de la proprièté relative pour subir le comportement du sous-menu */
+.menu li {
+    padding: 10px;
+    position: relative;
+} 
+
+
+.sousmenu{ 
+    list-style: none;
+    background-color:rgba(27, 54, 28, 0.8) ;
+    padding: 10px;
+    position: absolute; 
+    left: 100%; /* Place le sous-menu à droite du menu principal */
+    top: 0; /* Place le sous-menu en haut directement devant le nom de l'étudiant*/
+    opacity: 0;  
+    visibility: hidden; 
+    transition: all 0.3s ease; /* Transition smooth */
+    border-radius: 10px;
+}
+
+/* Affichage dusous-menu au nurvol du nom de l'étudiant */
+.sousmenu-item:hover  .sousmenu{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+iframe{display: none;}

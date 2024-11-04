@@ -1,0 +1,35 @@
+body{
+    background:url(PICS/BGHome.png);
+}
+/*mise des tableaux en display flexible*/
+.content1 ,.content2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*mise en forme du titre de la page d'accueil en utilisant le style Yatra One proposé dans l'énoncé*/
+h1{
+    font-family: 'Yatra One';
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: rgb(236, 215, 163);
+}
+/*configuration du style de chaque tableau */
+th , td{
+    border: 1px solid black;  
+}
+td{
+    background-color: aliceblue;
+}
+th {
+    background-color: #f2f2f2;
+    font-weight: bold; 
+}
+caption{
+    text-decoration: underline;
+    color: rgb(236, 215, 163);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+table{
+    margin: 20px;
+}

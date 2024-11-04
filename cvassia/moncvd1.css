@@ -1,0 +1,151 @@
+/* Styles globaux */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Définition de la police de caractères pour tout le document */
+}
+
+/* Mise en page du corps */
+body {
+    display: flex; /* Utilisation de flexbox pour aligner les colonnes */
+}
+/*hr*/
+.gauche>hr:only-of-type{ /*.hrgauche*/
+    border-top: 7px solid rgba(13, 61, 87, 0.939); /* Bordure en haut */
+    margin-left: 55px; /* Espace à gauche de hr */
+    margin-right: 650px; /* Espace à droite de hr */
+}
+/* Styles pour la partie gauche */
+.gauche {
+    width: 65%; /* Largeur de la partie gauche */
+}
+
+.droite h1{
+    color: aliceblue;/* Couleur du titre*/
+}
+/* Styles pour la partie droite */
+.droite {
+    display: flex; /* Utilisation de flexbox pour la mise en page */
+    justify-content: center; /* Centre le contenu horizontalement */
+    flex-direction: column; /* Aligne le contenu en colonne */
+    background-color: rgba(13, 61, 87, 0.939); /* Couleur de fond de la partie droite */
+    width: 35%; /* Largeur de la partie droite */
+    color: aliceblue; /* Couleur du texte dans la partie droite */
+    border: 0px solid gray; /* Aucune bordure */
+    border-radius: 100px 0px; /* Arrondi des bords de la partie droite */
+}
+
+/* Styles pour l'image de profil */
+.droite img {
+    margin-top: 30px; /* Espace au-dessus de l'image */
+    margin-left: 80px; /* Espace à gauche de l'image */
+}
+/*ancien article*//*Tout p qui est le deuxième élément de la div étant son parent direct*/
+div>p:nth-child(2) {
+	margin-left:20px; /* Espace à gauche d'article */
+}
+/* Styles pour les titres */
+body>div:first-child>h1{ /*.h1gauche*/
+    font-size: 30px; /* Taille de police */
+	color: rgba(13, 61, 87, 0.939); /* Couleur du texte */
+	margin-left: 90px; /* Espacement à gauche */
+	padding-top: 50px; /* Espacement en haut */
+}
+
+ .droite div>h1:first-child{/*.h1droite*//*Dans la partie droite, tout les titres h1 qui est le premier élément d'une balise div*/
+	font-size: 20px; /* Taille de police */
+	margin-left: 70px; /* Espacement à gauche */
+	margin-bottom: 0; /* Espacement en bas */
+}
+
+ body div>h2:first-child{/*.h2infos*//*Tout les titres h2 qui sont le premier élément d'une balise div*/
+	font-size: 20px; /* Taille de police */
+	margin-left: 20px; /* Espacement à gauche */
+	padding-top: 30px; /* Espacement en haut */
+}
+
+h2 {
+	font-size: 20px; /* Taille de police */
+	margin-left: 20px; /* Espacement à gauche */
+}
+h1, h2 {
+    margin: 10px 0; /* Espacement des titres */
+}
+
+h1 {
+    color: rgba(13, 61, 87, 0.939); /* Couleur spécifique pour le nom */
+    font-size: 35px; /* Taille spécifique pour le nom */
+}
+
+/* Styles pour les lignes de séparation */
+hr {
+    border: 0; /* Pas de bordure par défaut */
+    border-top: 3px solid aliceblue; /* Bordure supérieure de la section droite */
+    margin: 0 85px; /* Marge à gauche et à droite pour la bordure */
+    border-radius: 3px; /* Arrondi des bords de la bordure */
+}
+
+/* Styles pour les listes */
+ul {
+    /*list-style-type: none; /* Supprime les puces des listes */
+    padding-left: 0; /* Enlève le padding par défaut */
+}
+
+/* Styles pour les éléments de liste */
+li {
+    margin: 5px 0; /* Espacement entre les éléments de liste */
+}
+
+/* Styles au survol des éléments de liste */
+
+li:hover {
+    background-color: rgb(0, 0, 255); /* Couleur de fond au survol */
+    color: white; /* Couleur du texte au survol */
+    font-size: large; /* Agrandit la police au survol */
+    font-weight: bold; /* Rend le texte en gras au survol */
+    cursor: pointer; /* Change le curseur en main au survol */
+}
+
+/* Styles au survol des liens */
+a:hover {
+    color: white; /* Couleur du texte au survol des liens */
+    font-size: large; /* Agrandit la police au survol */
+    font-weight: bold; /* Rend le texte en gras au survol */
+    cursor: pointer; /* Change le curseur en main au survol */
+}
+
+/* Styles pour les icônes */
+.bord {
+    border-radius: 50%; /* Arrondi pour les icônes */
+}
+
+/* Styles pour l'image de profil */
+#info {
+    width: 200px; /* Largeur fixe de l'image de profil */
+    height: 190px; /* Hauteur fixe de l'image de profil */
+    border-radius: 50%; /* Arrondi pour donner une forme circulaire */
+}
+/*span*/
+span, div>span+p{
+	margin-left:20px;
+}
+
+/* Styles pour les sections */
+.section1{
+    margin: 20px 0; /* Espace autour des sections */
+}
+#exp_pro ,#educ ,#lois , #profil {
+    margin: 20px 0; /* Espace autour des sections */
+}
+
+.section2 {/**/
+    margin-left: 55px; /* Marge à gauche pour la section 2 */
+}
+
+.section3 {
+    margin-left: 60px; /* Marge à gauche pour la section 3 */
+}
+
+/* Styles pour la description */
+#profil>p:last-child{/*.description */
+    padding: 20px; /* Espace à l'intérieur du paragraphe de description */
+    margin: 20px; /* Espace autour du paragraphe */
+}

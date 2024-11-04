@@ -1,0 +1,76 @@
+#info{
+    background-color: gainsboro;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 4fr 1.5fr 1fr;
+    grid-template-rows: 30% 40%;
+    align-content: center;
+    height: 15em;
+    border-radius: 10px;
+    color:rgba(8, 26, 60, 0.939);
+}
+.pict {
+    margin: auto;
+    align-content: center;
+    grid-column: 3;
+    z-index: 10;
+}
+h1 {
+    margin-left:10px;
+    width: 50%;
+    align-content: center;
+}
+h2 {
+    text-decoration: underline;
+    font-size: 100%;
+    margin-left: 20px;
+    padding-top:10px;
+}
+h3{
+    margin-left:10px;
+    grid-column: 1 / 1;
+    align-content: center;
+}
+h4{
+    text-decoration: underline;
+    margin-top:5px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+h5{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+ul {
+    margin-left:20px;
+}
+li{
+    padding-top: 10px;
+}
+
+
+p{
+    margin-left:10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+/* La partie gauche du CV*/
+.gauche{
+    padding-right: 5%;
+    width: 75%;
+    text-align: justify;
+}
+/* La partie droite du CV */
+.droite{
+    position : absolute;
+    right : 8px;
+    top : 19px;
+    width: 20%;
+    height: 190%;
+    background-color: gainsboro;
+    margin-top: 15em;
+    padding-top: 5em;
+}

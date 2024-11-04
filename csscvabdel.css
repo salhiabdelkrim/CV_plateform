@@ -1,0 +1,104 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*style pour l'organisation des pagarraphes du cv avec une mise en page flexible*/
+body{
+    display: flex;
+}
+/*mise en forme de la partie à droite */
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(13, 61, 87, 0.939);
+    width: 35%;
+    color: aliceblue;
+    
+}
+/*mise en forme de la partie gauche */
+.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 65%;
+    font-size: large;
+    padding-top: 80px;
+    
+}
+/*mise en forme de la photo*/
+.idpic{
+     margin-top: 15px;
+    margin-left: 80px;
+}
+/*style des lignes sous chaque titre*/
+.hrleft{
+    border: 0;
+    border-top: 3px solid aliceblue;
+    margin-left: 55px;
+    margin-right: 85px;
+    border-radius: 3px;
+}
+.hrright{
+    border-top : 3px solid black;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+/*style des informations personnelles*/
+#info{
+    font-size: large;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    padding-top: 20px;
+    
+    margin-left: 55px;
+}
+#info>p{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    width: 300px;
+}
+p span{
+    margin-left: 10px;
+}
+
+/*style du pragraphe de description*/
+#profil{
+    border-radius: 20px;
+    margin-top: 70px;
+}
+h2{
+    font-size: 20px; margin-left: 20px;
+}
+#exp_pro , #educ , #lois{
+    border-radius: 20px;
+}
+/*ajout des espaces entre les paragraphes*/
+#educ p{
+    margin-left: 55px;
+}
+#educ ul , #lois ul, #lang ul{
+    margin-left: 30px;
+}
+.left h1{
+    margin-left: 60px;
+}
+h2{
+    font-size: 20px; margin-left: 20px;
+}
+
+#exp_pro span ,#exp_pro p,#exp_pro ul, #profil p {
+    margin-left: 20px;
+}
+.lang ul{
+    margin-left: 27px;
+}
+#projects ul{
+    font-size: larger;
+    margin-left: 20px;
+}
+.right h1{
+    margin-left: 55px;  
+    margin-bottom: 0; 
+}

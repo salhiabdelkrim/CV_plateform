@@ -1,0 +1,76 @@
+body {
+	background-color: #C9CACF;/*A changer pour la couleur de fond de l'ensemble de la page*/
+	color: black;
+}
+
+header { /*Boite pour le profil*/
+	background-color: #4545FF;/*A changer pour la couleur de fond du profil*/
+	border-radius: 20px;
+	height : 250px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	/*border: solid 1px black;*/
+}
+
+section {
+	text-align: justify;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+/*Code css pour l'en-tête*/
+header>h1:first-child {
+	font-variant: small-caps;
+	font-size: 3em;
+	max-width: 50%;
+	min-width: 30%;
+	width: 45%;
+	align-content: center;
+}
+
+header h1+div { /*Section contact*/
+	text-align: right;
+	align-content: center;
+	padding-right: 2.5%;
+}
+
+header h1+div ul { /*Liste de la section contact*/
+	list-style-type: none;
+}
+
+header h1+div ul li a:link{ /*Liens contenus dans la liste de la section contact*/
+	color: black;
+}
+
+header div:last-of-type { /*Boîte(div) de la photo*/
+	position: relative;
+	max-width: 15%;
+	padding: 10px;
+}
+
+header div:last-of-type img { /*Photo de profil*/
+	border-radius: 100px;
+	box-shadow: 5px 3px 5px 2px black;
+}
+/*Fin code css pour l'entête*/
+
+h4 {
+	margin-bottom: 6px;
+}
+
+section[id] { /*#info, #lois, #exp_pro, #educ*/
+	margin: auto;
+	width: 85%;
+}
+
+h5 {
+	font-size: 3em;
+}
+
+span {
+	font-style: italic;
+}
